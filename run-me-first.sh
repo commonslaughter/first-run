@@ -17,6 +17,19 @@ sudo apt-get update && sudo apt-get upgrade
 ## generate a fresh set of SSH keys
 ssh-keygen
 
+## install network tools
+sudo apt-get install -y firefox
+sudo apt-get install -y chromium-browser
+sudo apt-get install -y filezilla
+sudo apt-get install -y deluge
+sudo apt-get install -y transmission
+sudo apt-get install -y midori
+sudo apt-get install -y zenmap
+sudo apt-get install -y net-tools
+sudo apt-get install -y nmap
+## sudo apt-get install -y iptables
+sudo apt-get install -y remmina
+
 ## install system tools
 sudo apt-get install -y gnome-disk-utility
 sudo apt-get install -y usb-creator-gtk
@@ -42,26 +55,15 @@ sudo apt-get install -y shutter
 sudo apt-get install -y gimp
 sudo apt-get install -y cheese
 
-## install network tools
-sudo apt-get install -y firefox
-sudo apt-get install -y chromium-browser
-sudo apt-get install -y filezilla
-sudo apt-get install -y deluge
-sudo apt-get install -y transmission
-sudo apt-get install -y midori
-sudo apt-get install -y zenmap
-sudo apt-get install -y net-tools
-sudo apt-get install -y nmap
-sudo apt-get install -y iptables
-
 ## install container tools
-sudo apt-get install -y virtualbox
-sudo apt-get install -y snapd
-sudo apt-get install -y lxc
+## sudo apt-get install -y virtualbox
+## sudo apt-get install -y snapd
+## sudo apt-get install -y lxc
 
 ## install game tools
 sudo apt-get install -y pychess
 sudo apt-get install -y steam
+sudo apt-get install -y lbreakout2
 
 ## install backup tools
 sudo apt-get install -y luckybackup
@@ -92,4 +94,3 @@ echo "It took $SECONDS seconds for this script to execute."
 ## sudo reboot now
 
 ## EoF
-
