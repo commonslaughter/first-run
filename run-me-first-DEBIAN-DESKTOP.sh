@@ -8,7 +8,8 @@ set -e
 date
 
 ## update the system to current packages
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt update && sudo apt upgrade -y
 
 ## setup yubikeys; https://support.yubico.com/support/solutions/articles/15000010964-enabling-the-yubico-ppa-on-ubuntu
 ## sudo add-apt-repository ppa:yubico/stable && sudo apt-get update
@@ -27,7 +28,8 @@ sudo apt-get install -y midori
 sudo apt-get install -y zenmap
 sudo apt-get install -y net-tools
 sudo apt-get install -y nmap
-## sudo apt-get install -y iptables
+sudo apt-get install -y iptables
+sudo apt-get install -y iptables-services
 sudo apt-get install -y remmina
 
 ## install system tools
@@ -43,7 +45,7 @@ sudo apt-get install -y xarchiver
 sudo apt-get install -y 7zip
 sudo apt-get install -y featherpad
 sudo apt-get install -y gedit
-##sudo apt-get install -y libreoffice
+sudo apt-get install -y libreoffice
 sudo apt-get install -y geany
 
 ## install multimedia tools
