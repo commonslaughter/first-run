@@ -25,11 +25,11 @@ sudo apt-get install -y filezilla
 sudo apt-get install -y deluge
 sudo apt-get install -y transmission
 sudo apt-get install -y midori
-sudo apt-get install -y zenmap
+## sudo apt-get install -y zenmap
 sudo apt-get install -y net-tools
 sudo apt-get install -y nmap
 sudo apt-get install -y iptables
-sudo apt-get install -y iptables-services
+## sudo apt-get install -y iptables-services
 sudo apt-get install -y remmina
 
 ## install system tools
@@ -42,7 +42,7 @@ sudo apt-get install -y git
 
 ## install office tools
 sudo apt-get install -y xarchiver
-sudo apt-get install -y 7zip
+## sudo apt-get install -y 7zip
 sudo apt-get install -y featherpad
 sudo apt-get install -y gedit
 sudo apt-get install -y libreoffice
@@ -50,12 +50,14 @@ sudo apt-get install -y geany
 
 ## install multimedia tools
 sudo apt-get install -y redshift-gtk
-sudo apt-get install -y geoclue-2.0
+## sudo apt-get install -y geoclue-2.0
 sudo apt-get install -y vlc
 sudo apt-get install -y rhythmbox
-sudo apt-get install -y shutter
+## sudo apt-get install -y shutter
 sudo apt-get install -y gimp
 sudo apt-get install -y cheese
+sudo apt-get install -y openshot
+sudo apt-get install -y obs-studio
 
 ## install container tools
 ## sudo apt-get install -y virtualbox
@@ -69,7 +71,7 @@ sudo apt-get install -y lbreakout2
 
 ## install backup tools
 sudo apt-get install -y luckybackup
-sudo apt-get install -y backupninja
+## sudo apt-get install -y backupninja
 
 ## install security tools
 sudo apt-get install -y keypassx
