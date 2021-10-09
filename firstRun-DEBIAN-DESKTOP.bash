@@ -33,6 +33,7 @@ sudo apt-get install -y iptables
 sudo apt-get install -y remmina
 
 ## install system tools
+sudo apt-get install -y htop
 sudo apt-get install -y gnome-disk-utility
 sudo apt-get install -y usb-creator-gtk
 sudo apt-get install -y tilix
