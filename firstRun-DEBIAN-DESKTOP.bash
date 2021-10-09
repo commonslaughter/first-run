@@ -16,7 +16,7 @@ sudo apt update && sudo apt upgrade -y
 ## sudo apt-get install -y yubikey-manager-qt
 
 ## generate a fresh set of SSH keys
-ssh-keygen
+## ssh-keygen
 
 ## install network tools
 sudo apt-get install -y firefox
@@ -86,7 +86,7 @@ sudo apt-get install -y gtkhash
 ## sudo apt-get install -y salt-master      ## for saltstack
 ## sudo apt-get install -y chef
 ## sudo apt-get install -y ansible
-sudo apt-get install -y cockpit
+## sudo apt-get install -y cockpit
 
 date
 echo
