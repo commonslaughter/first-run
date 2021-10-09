@@ -1,5 +1,5 @@
 #!/bin/bash
-## Michael Tatum
+## 
 ## Setup a local personal device after a clean Debian install
 
 ## viking mode for safety
