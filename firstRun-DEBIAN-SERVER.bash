@@ -18,7 +18,13 @@ sudo apt update && sudo apt upgrade -y
 ## generate a fresh set of SSH keys
 ## ssh-keygen
 
-
+## install management tools
+## sudo apt-get install -y snmpd            ## for observium
+## sudo apt-get install -y salt-minion      ## for saltstack
+## sudo apt-get install -y salt-master      ## for saltstack
+## sudo apt-get install -y chef
+## sudo apt-get install -y ansible
+## sudo apt-get install -y cockpit
 
 
 
