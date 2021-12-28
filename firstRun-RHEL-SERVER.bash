@@ -1,6 +1,6 @@
 #!/bin/bash
 ## 
-## Setup a local personal device after a clean RHEL install
+## Setup a local personal server after a clean RHEL install
 
 ## viking mode for safety
 set -e
