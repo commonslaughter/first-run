@@ -36,6 +36,7 @@ sudo yum install -y rkhunter
 sudo yum install -y curl
 sudo yum install -y tar
 sudo yum install -y nano
+sudo yum install -y wget
 
 ## install LAMP packages for services 
 ## sudo yum install httpd mod_evasive mod_ssl ghostscript postfix
