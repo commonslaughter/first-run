@@ -1,6 +1,6 @@
 #!/bin/bash
 ## 
-## Setup a local personal device after a clean Debian install
+## Setup a local personal server after a clean Debian install
 
 ## viking mode for safety
 set -e
