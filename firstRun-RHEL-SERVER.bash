@@ -31,11 +31,10 @@ sudo yum install -y backupninja
 sudo yum install -y lynis
 sudo yum install -y rkhunter
 
-## install packages for services 
+## install LAMP packages for services 
 ## sudo yum install httpd
-## sudo yum install mariadb
-## sudo yum install php
-
+## sudo yum install mariadb mariadb-server
+## sudo yum install php php-mysql php-iconv php-mbstring php-curl php-openssl php-tokenizer php-xmlpc php-soap php-ctype php-zip php-gd php-simplexml php-spl php-pcre php-dom php-xml php-intl php-json php-ldap php-pecl-apc
 
 date
 echo
