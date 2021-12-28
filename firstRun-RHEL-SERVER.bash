@@ -46,15 +46,15 @@ sudo yum install -y rkhunter
 ## systemctl start httpd
 ## systemctl enable mariadb
 ## systemctl start mariadb
-## service cockpit start
-## systemctl enable cockpit 
+service cockpit start
+systemctl enable cockpit 
 ## service postfix start
 ## systemctl enable postfix
 
 ## show status of new services 
 ## service iptables status
 ## service httpd status 
-## service cockpit status
+service cockpit status
 ## service postfix status
 ## service mariadb status
 
