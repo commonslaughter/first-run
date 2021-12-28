@@ -5,6 +5,9 @@
 ## viking mode for safety
 set -e
 
+## set the timezone
+timedatectl set-timezone America/Chicago
+
 date
 
 ## update the system to current packages
