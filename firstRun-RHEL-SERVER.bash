@@ -33,10 +33,13 @@ sudo yum install -y git
 sudo yum install -y backupninja
 sudo yum install -y lynis
 sudo yum install -y rkhunter
+sudo yum install -y curl
+sudo yum install -y tar
+sudo yum install -y nano
 
 ## install LAMP packages for services 
 ## sudo yum install httpd mod_evasive mod_ssl ghostscript postfix
-## sudo yum install mariadb mariadb-server nano tar curl
+## sudo yum install mariadb mariadb-server   
 ## sudo yum install php php-mysql php-iconv php-mbstring php-curl php-openssl php-tokenizer
 ## sudo yum install php-simplexml php-spl php-pcre php-dom php-xml php-intl php-json 
 ## sudo yum install  php-xmlpc php-soap php-ctype php-zip php-gd php-ldap php-pecl-apc
