@@ -10,9 +10,6 @@ date
 ## update the system to current packages
 sudo yum update && sudo yum upgrade -y
 
-## setup yubikeys; https://support.yubico.com/support/solutions/articles/15000010964-enabling-the-yubico-ppa-on-ubuntu
-## sudo add-apt-repository ppa:yubico/stable && sudo yum update
-## sudo yum install -y yubikey-manager-qt
 
 ## generate a fresh set of SSH keys
 ## ssh-keygen
