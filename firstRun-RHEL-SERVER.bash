@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 ## [ insert your name ]
 ## Setup a local personal server after a clean RHEL install
 
@@ -32,9 +32,9 @@ sudo yum install -y lynis
 sudo yum install -y rkhunter
 
 ## install packages for services 
-sudo yum install httpd
-sudo yum install mariadb
-sudo yum install php
+## sudo yum install httpd
+## sudo yum install mariadb
+## sudo yum install php
 
 
 date
