@@ -11,39 +11,39 @@ timedatectl set-timezone America/Chicago
 date
 
 ## update the system to current packages
-sudo yum update -y
-sudo yum upgrade -y
+sudo apt update -y
+sudo apt upgrade -y
 
 ## generate a fresh set of SSH keys
 ## ssh-keygen
 
 ## install system tools
-## sudo yum install -y snmpd            
-sudo yum install -y salt-minion      
-## sudo yum install -y salt-master      
-## sudo yum install -y chef
-## sudo yum install -y ansible
-sudo yum install -y cockpit
-sudo yum install -y net-tools
-sudo yum install -y nmap
-sudo yum install -y iptables
-sudo yum install -y iptables-services
-sudo yum install -y htop
-sudo yum install -y git
-sudo yum install -y backupninja
-sudo yum install -y lynis
-sudo yum install -y rkhunter
-sudo yum install -y curl
-sudo yum install -y tar
-sudo yum install -y nano
-sudo yum install -y wget
+sudo apt install -y snmpd            
+sudo apt install -y salt-minion      
+## sudo apt install -y salt-master      
+## sudo apt install -y chef
+## sudo apt install -y ansible
+sudo apt install -y cockpit
+sudo apt install -y net-tools
+sudo apt install -y nmap
+sudo apt install -y iptables
+sudo apt install -y iptables-services
+sudo apt install -y htop
+sudo apt install -y git
+sudo apt install -y backupninja
+sudo apt install -y lynis
+sudo apt install -y rkhunter
+sudo apt install -y curl
+sudo apt install -y tar
+sudo apt install -y nano
+sudo apt install -y wget
 
 ## install LAMP packages for services 
-## sudo yum install httpd mod_evasive mod_ssl ghostscript postfix
-## sudo yum install mariadb mariadb-server   
-## sudo yum install php php-mysql php-iconv php-mbstring php-curl php-openssl php-tokenizer
-## sudo yum install php-simplexml php-spl php-pcre php-dom php-xml php-intl php-json 
-## sudo yum install  php-xmlpc php-soap php-ctype php-zip php-gd php-ldap php-pecl-apc
+## sudo apt install httpd mod_evasive mod_ssl ghostscript postfix
+## sudo apt install mariadb mariadb-server   
+## sudo apt install php php-mysql php-iconv php-mbstring php-curl php-openssl php-tokenizer
+## sudo apt install php-simplexml php-spl php-pcre php-dom php-xml php-intl php-json 
+## sudo apt install  php-xmlpc php-soap php-ctype php-zip php-gd php-ldap php-pecl-apc
 
 ## Start and enable services
 ## systemctl enable httpd
