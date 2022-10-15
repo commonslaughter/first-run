@@ -18,7 +18,7 @@ sudo yum upgrade -y
 ## ssh-keygen
 
 ## install system tools
-## sudo yum install -y snmpd            
+sudo yum install -y snmpd            
 sudo yum install -y salt-minion      
 ## sudo yum install -y salt-master      
 ## sudo yum install -y chef
