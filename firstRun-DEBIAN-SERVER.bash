@@ -15,7 +15,7 @@ sudo apt update -y
 sudo apt upgrade -y
 
 ## generate a fresh set of SSH keys
-## ssh-keygen
+ssh-keygen
 
 ## install system tools
 sudo apt install -y snmpd            
