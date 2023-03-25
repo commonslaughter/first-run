@@ -54,9 +54,13 @@ service cockpit start
 systemctl enable cockpit 
 service postfix start
 systemctl enable postfix
+systemctl stop firewalld
+systemctl disable firewalld
+systemctl start iptables
 
 ## show status of new services 
 service iptables status
+iptables -L
 service httpd status 
 service cockpit status
 service postfix status
