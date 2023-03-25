@@ -11,8 +11,8 @@ timedatectl set-timezone America/Chicago
 date
 
 ## update the system to current packages
-sudo yum update -y
-## sudo dnf upgrade -y
+sudo yum update -y  ## sudo dnf upgrade -y
+sudo yum install epel-release
 
 ## generate a fresh set of SSH keys
 ssh-keygen
