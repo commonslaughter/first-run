@@ -15,7 +15,7 @@ sudo yum update -y
 ## sudo dnf upgrade -y
 
 ## generate a fresh set of SSH keys
-## ssh-keygen
+ssh-keygen
 
 ## install system tools
 sudo yum install -y snmpd            
