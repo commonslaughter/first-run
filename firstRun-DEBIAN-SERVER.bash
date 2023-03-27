@@ -13,6 +13,10 @@ date
 ## set your hostname
 ## sudo hostnamectl set-hostname [ insert your name ]
 
+## save your local subnet
+## sudo nano /etc/hosts
+## sudo nano /etc/motd
+
 ## update the system to current packages
 sudo apt update -y
 sudo apt upgrade -y
@@ -73,9 +77,9 @@ sudo service postfix status
 sudo service mariadb status
 
 ## First-Time Git Setup
-sudo git config --global user.name "[ insert your name ]"
-sudo git config --global user.email [ insert your name ]
-sudo git config --global core.editor nano
+## sudo git config --global user.name "[ insert your name ]"
+## sudo git config --global user.email [ insert your name ]
+## sudo git config --global core.editor nano
 
 date
 echo
