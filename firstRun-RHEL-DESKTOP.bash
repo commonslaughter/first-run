@@ -1,99 +1,91 @@
 #!/bin/bash
 ## [ insert your name ]
-## Setup a local personal device after a clean RHEL install
+## Setup a local personal server after a clean RHEL install
 
 ## viking mode for safety
-## set -e
+## sudo set -e
 
 ## set the timezone
-timedatectl set-timezone America/Chicago
+sudo timedatectl set-timezone America/Chicago
 
 date
 
+## set your hostname
+## sudo hostnamectl set-hostname [ insert your name ]
+
+## save your local subnet
+## sudo nano /etc/hosts
+## sudo nano /etc/motd
+
 ## update the system to current packages
-sudo yum update && sudo yum upgrade -y
+sudo yum update -y  ## sudo dnf upgrade -y
+sudo yum install epel-release
 
 ## generate a fresh set of SSH keys
-## ssh-keygen
+ssh-keygen
 
-## install network tools
-sudo yum install -y firefox
-sudo yum install -y chromium-browser
-sudo yum install -y filezilla
-sudo yum install -y deluge
-sudo yum install -y transmission
-sudo yum install -y midori
-## sudo yum install -y zenmap
+## generate keys for github
+## ssh-keygen -t ed25519 -C "[ insert your name ]"
+
+## install system tools
+sudo yum install -y snmpd            
+sudo yum install -y salt-minion      
+## sudo yum install -y salt-master      
+## sudo yum install -y chef
+sudo yum install -y ansible
+sudo yum install -y cockpit
 sudo yum install -y net-tools
 sudo yum install -y nmap
 sudo yum install -y iptables
-## sudo yum install -y iptables-services
-sudo yum install -y remmina
-
-## install system tools
+sudo yum install -y iptables-services
 sudo yum install -y htop
-sudo yum install -y gnome-disk-utility
-sudo yum install -y usb-creator-gtk
-sudo yum install -y tilix
-sudo yum install -y xfburn
-sudo yum install -y gparted
 sudo yum install -y git
-
-## install office tools
-sudo yum install -y xarchiver
-## sudo yum install -y 7zip
-sudo yum install -y featherpad
-sudo yum install -y gedit
-sudo yum install -y libreoffice
-sudo yum install -y geany
-
-## install multimedia tools
-sudo yum install -y redshift-gtk
-## sudo yum install -y geoclue-2.0
-sudo yum install -y vlc
-sudo yum install -y rhythmbox
-## sudo yum install -y shutter
-sudo yum install -y gimp
-sudo yum install -y cheese
-sudo yum install -y openshot
-sudo yum install -y obs-studio
-
-## install container tools
-## sudo yum install -y virtualbox
-## sudo yum install -y snapd
-## sudo yum install -y lxc
-
-## install game tools
-sudo yum install -y pychess
-sudo yum install -y steam
-sudo yum install -y lbreakout2
-
-## install backup tools
-sudo yum install -y luckybackup
-## sudo yum install -y backupninja
-
-## install security tools
-sudo yum install -y keypassx
-sudo yum install -y keypassxc
-sudo yum install -y clamav clamav-daemon clamtk
-sudo yum install -y bleachbit
+sudo yum install -y backupninja
 sudo yum install -y lynis
 sudo yum install -y rkhunter
-sudo yum install -y gtkhash
+sudo yum install -y curl
+sudo yum install -y tar
+sudo yum install -y nano
+sudo yum install -y wget
 
-## install management tools
-## sudo yum install -y snmpd            ## for observium
-## sudo yum install -y salt-minion      ## for saltstack
-## sudo yum install -y salt-master      ## for saltstack
-## sudo yum install -y chef
-## sudo yum install -y ansible
-## sudo yum install -y cockpit
+## install LAMP packages for services 
+sudo yum install httpd mod_evasive mod_ssl ghostscript postfix
+sudo yum install mariadb mariadb-server   
+sudo yum install php php-mysql php-iconv php-mbstring php-curl php-openssl php-tokenizer
+sudo yum install php-simplexml php-spl php-pcre php-dom php-xml php-intl php-json 
+sudo yum install  php-xmlpc php-soap php-ctype php-zip php-gd php-ldap php-pecl-apc
+
+## Start and enable services
+sudo systemctl enable httpd
+sudo systemctl start httpd
+sudo systemctl enable mariadb
+sudo systemctl start mariadb
+sudo service cockpit start
+sudo systemctl enable cockpit 
+sudo service postfix start
+sudo systemctl enable postfix
+sudo systemctl stop firewalld
+sudo systemctl disable firewalld
+sudo systemctl start iptables
+
+## show status of new services 
+sudo service iptables status
+sudo iptables -L
+sudo service httpd status 
+sudo service cockpit status
+sudo service postfix status
+sudo service mariadb status
+
+## First-Time Git Setup
+## sudo git config --global user.name "[ insert your name ]"
+## sudo git config --global user.email [ insert your name ]
+## sudo git config --global core.editor nano
 
 date
 echo
 echo "It took $SECONDS seconds for this script to execute."
 
-## final reboot as last action; enables newest kernel
+## final reboot as last action; enables newer kernel
 ## sudo reboot now
 
 ## EoF
