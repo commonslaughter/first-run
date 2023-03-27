@@ -3,12 +3,15 @@
 ## Setup a local personal server after a clean RHEL install
 
 ## viking mode for safety
-## set -e
+## sudo set -e
 
 ## set the timezone
-timedatectl set-timezone America/Chicago
+sudo timedatectl set-timezone America/Chicago
 
 date
+
+## set your hostname
+## sudo hostnamectl set-hostname [ insert your name ]
 
 ## update the system to current packages
 sudo apt update -y
@@ -16,6 +19,9 @@ sudo apt upgrade -y
 
 ## generate a fresh set of SSH keys
 ssh-keygen
+
+## generate keys for github
+## ssh-keygen -t ed25519 -C "[ insert your name ]"
 
 ## install system tools
 sudo apt install -y snmpd            
@@ -46,25 +52,30 @@ sudo apt install php-simplexml php-spl php-pcre php-dom php-xml php-intl php-jso
 sudo apt install  php-xmlpc php-soap php-ctype php-zip php-gd php-ldap php-pecl-apc
 
 ## Start and enable services
-systemctl enable httpd
-systemctl start httpd
-systemctl enable mariadb
-systemctl start mariadb
-service cockpit start
-systemctl enable cockpit 
-service postfix start
-systemctl enable postfix
-systemctl stop firewalld
-systemctl disable firewalld
-systemctl start iptables
+sudo systemctl enable httpd
+sudo systemctl start httpd
+sudo systemctl enable mariadb
+sudo systemctl start mariadb
+sudo service cockpit start
+sudo systemctl enable cockpit 
+sudo service postfix start
+sudo systemctl enable postfix
+sudo systemctl stop firewalld
+sudo systemctl disable firewalld
+sudo systemctl start iptables
 
 ## show status of new services 
-service iptables status
-iptables -L
-service httpd status 
-service cockpit status
-service postfix status
-service mariadb status
+sudo service iptables status
+sudo iptables -L
+sudo service httpd status 
+sudo service cockpit status
+sudo service postfix status
+sudo service mariadb status
+
+## First-Time Git Setup
+sudo git config --global user.name "[ insert your name ]"
+sudo git config --global user.email [ insert your name ]
+sudo git config --global core.editor nano
 
 date
 echo
