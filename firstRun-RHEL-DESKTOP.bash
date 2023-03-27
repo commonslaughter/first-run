@@ -1,9 +1,9 @@
 #!/bin/bash
-## 
+## [ insert your name ]
 ## Setup a local personal device after a clean RHEL install
 
 ## viking mode for safety
-set -e
+## set -e
 
 ## set the timezone
 timedatectl set-timezone America/Chicago
