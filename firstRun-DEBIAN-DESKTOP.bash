@@ -48,34 +48,6 @@ sudo apt install -y tar
 sudo apt install -y nano
 sudo apt install -y wget
 
-## install LAMP packages for services 
-sudo apt install httpd mod_evasive mod_ssl ghostscript postfix
-sudo apt install mariadb mariadb-server   
-sudo apt install php php-mysql php-iconv php-mbstring php-curl php-openssl php-tokenizer
-sudo apt install php-simplexml php-spl php-pcre php-dom php-xml php-intl php-json 
-sudo apt install  php-xmlpc php-soap php-ctype php-zip php-gd php-ldap php-pecl-apc
-
-## Start and enable services
-sudo systemctl enable httpd
-sudo systemctl start httpd
-sudo systemctl enable mariadb
-sudo systemctl start mariadb
-sudo service cockpit start
-sudo systemctl enable cockpit 
-sudo service postfix start
-sudo systemctl enable postfix
-sudo systemctl stop firewalld
-sudo systemctl disable firewalld
-sudo systemctl start iptables
-
-## show status of new services 
-sudo service iptables status
-sudo iptables -L
-sudo service httpd status 
-sudo service cockpit status
-sudo service postfix status
-sudo service mariadb status
-
 ## First-Time Git Setup
 ## sudo git config --global user.name "[ insert your name ]"
 ## sudo git config --global user.email [ insert your name ]
