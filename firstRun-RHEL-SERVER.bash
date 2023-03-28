@@ -48,6 +48,11 @@ sudo yum install -y tar
 sudo yum install -y nano
 sudo yum install -y wget
 
+## install container tools
+## sudo yum install -y virtualbox
+sudo yum install -y snapd
+sudo yum install -y lxc
+
 ## install LAMP packages for services 
 sudo yum install httpd mod_evasive mod_ssl ghostscript postfix
 sudo yum install mariadb mariadb-server   
