@@ -52,6 +52,8 @@ sudo yum install -y wget
 ## sudo yum install -y virtualbox
 sudo yum install -y snapd
 sudo yum install -y lxc
+## sudo yum install -y flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 ## install LAMP packages for services 
 sudo yum install httpd mod_evasive mod_ssl ghostscript postfix
