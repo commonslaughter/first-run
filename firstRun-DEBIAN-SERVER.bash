@@ -48,6 +48,11 @@ sudo apt install -y tar
 sudo apt install -y nano
 sudo apt install -y wget
 
+## install container tools
+## sudo apt install -y virtualbox
+sudo apt install -y snapd
+sudo apt install -y lxc
+
 ## install LAMP packages for services 
 sudo apt install httpd mod_evasive mod_ssl ghostscript postfix
 sudo apt install mariadb mariadb-server   
