@@ -52,6 +52,7 @@ sudo apt install -y wget
 ## sudo apt install -y virtualbox
 sudo apt install -y snapd
 sudo apt install -y lxc
+sudo apt install -y flatpak
 
 ## install LAMP packages for services 
 sudo apt install httpd mod_evasive mod_ssl ghostscript postfix
