@@ -1,6 +1,6 @@
 #!/bin/bash
 ## [ insert your name ]
-## Setup a local personal server after a clean RHEL install
+## Setup a local personal server after a clean DEBIAN install
 
 ## viking mode for safety
 ## sudo set -e
